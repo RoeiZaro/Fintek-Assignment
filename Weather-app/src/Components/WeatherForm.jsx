@@ -10,29 +10,36 @@ const text = `
   `
 
 function WeatherForm({setWeatherData}) {
-    const [cityName,setCityName] = useState("");
+  const [cityName,setCityName] = useState("");
 
   const getWeatherData = async () => {
     try {
-      const response = await axios.post('http://localhost:3100/getWeather', { city });
-      console.log(response)
+      const response = await axios.post('http://localhost:3100/getWeather', { city: cityName });
+      console.log(response.data.weatherDataForClient);
+
+      setWeatherData(prev=>response.data.weatherDataForClient);
+
     } catch (err) {
+      alert(err.message);
+      if(err.message === "Request failed with status code 400"){
+        setWeatherData(prev=>{});
+      }
+
       console.error('There was a problem with the request:', err);
     }
   };
+
+
   // form handling
   const handleChange = (eve) =>{
-    setCityName(eve.target.value)
+    setCityName(eve.target.value);
   }
 
 
   const handleSubmit = (eve) => {
-    eve.preventDefault()
-    //send API request and  w8 for response, then show to weather
-    getWeatherData(cityName)
-      .then(response => {console.log(response);})
-      .catch(err =>{console.log(err);})
-    
+    eve.preventDefault();
+    //send API request and save the data
+    getWeatherData(cityName); 
   }
 
 
