@@ -6,8 +6,6 @@ import './App.css'
 function App() {
   const [weatherData, setWeatherData] = useState("")
   
-
-
   return (
     <div id='app-conteiner'>
       <WeatherForm  setWeatherData={setWeatherData}/>
