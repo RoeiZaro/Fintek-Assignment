@@ -1,4 +1,7 @@
 import React from 'react'
+import './WeatherForm.css'
+
+// NOTE: add actual data from api 
 function WeatherPopup() {
   return (
     <div id='popup-conteiner'>
