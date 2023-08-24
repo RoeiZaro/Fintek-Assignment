@@ -60,6 +60,7 @@ function WeatherForm({setWeatherData}) {
             id='cityNameInput' 
             type='text' 
             name='cityName' 
+            maxLength={25}
             value={cityName} 
             onChange={(eve)=>handleChange(eve)} 
           /> 
