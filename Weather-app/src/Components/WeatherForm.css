@@ -1,0 +1,52 @@
+/* text styling */
+pre{
+    font-size: x-large;
+    margin-top: 0px;
+    }
+
+/* *************************** */
+
+/* form styling */
+    form{
+      padding-left: 3%;
+    }
+    
+    label {
+      color: grey;
+      font-size: small;
+    }
+    /* entering the button inside the input part 1*/
+    #inputConteiner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: min-content;
+    }
+    /* entering the button inside the input part 2 */
+    #cityNameInput {
+      position: relative;
+      width: 280px;
+      height: 30px;
+      color: grey;
+      border: none;
+      border-radius: 0.3rem;
+      padding: 10px 15px;
+    }
+    
+    .submit {
+      position: absolute;
+      margin-right: 10px;
+      border: none;
+      background:#0b683c;
+      color:#deffef;
+      border-radius: 0.45rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    /* adding hover for button (need degisn adjusment) */
+    #able-button:hover{
+      background:#006a39;
+      color:#00034d;
+    }
