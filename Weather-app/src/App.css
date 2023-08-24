@@ -8,13 +8,13 @@
    
   }
   
-  #Conteiner1{
+  #form-conteiner{
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   
-  #Conteiner2{
+  #popup-conteiner{
     display: flex;
     align-items: center;
     justify-content: space-around;
