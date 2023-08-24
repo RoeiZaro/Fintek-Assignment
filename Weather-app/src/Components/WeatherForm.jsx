@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WeatherPopup.css'
 
 // opening message text
@@ -7,8 +7,8 @@ const text = `
     to see the weather
     around the world
   `
-function WeatherForm({cityName, setCityName}) {
-
+function WeatherForm({setWeatherData}) {
+    const [cityName,setCityName] = useState("")
   // form handling
   const handleChange = (eve) =>{
     setCityName(eve.target.value)
@@ -18,6 +18,7 @@ function WeatherForm({cityName, setCityName}) {
     eve.preventDefault()
     //send API request and  w8 for response, then show to weather
     console.log(cityName);
+    setWeatherData("abc")
   }
 
 
@@ -34,8 +35,21 @@ function WeatherForm({cityName, setCityName}) {
 
         {/* the input and the submit area */}
         <div id="inputConteiner">
-          <input id='cityNameInput' type='text' name='cityName' value={cityName} onChange={(eve)=>handleChange(eve)} />
-          <input id='submit' type='submit' value="Check"/>
+          <input 
+            id='cityNameInput' 
+            type='text' 
+            name='cityName' 
+            value={cityName} 
+            onChange={(eve)=>handleChange(eve)} 
+          /> 
+
+          <input 
+            id={cityName&&'able-button'}
+            className='submit'
+            type='submit' 
+            value="Check"
+            disabled={!cityName}
+            />
         </div>
           
       </form>
