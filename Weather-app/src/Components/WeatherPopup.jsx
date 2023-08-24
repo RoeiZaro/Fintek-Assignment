@@ -1,7 +1,7 @@
 import React from 'react'
 function WeatherPopup() {
   return (
-    <div>
+    <div id='popup-conteiner'>
          <div id='popup'>
           <div id='location-section'>
             <p>Tel Aviv</p>

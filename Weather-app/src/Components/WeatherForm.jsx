@@ -17,7 +17,7 @@ const handleSubmit = (eve) => {
 
 function WeatherForm() {
   return (
-    <div>
+    <div id='form-conteiner'>
        <pre>{text}</pre>
       
        <form onSubmit={(eve)=>handleSubmit(eve)}>
