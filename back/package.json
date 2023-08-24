@@ -1,0 +1,12 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "backend server for the weather app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Roei Zaro",
+  "license": "ISC"
+}
