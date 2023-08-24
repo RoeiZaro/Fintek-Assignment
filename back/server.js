@@ -1,1 +1,9 @@
-console.log("abc");
+const http = require("http")
+
+const PORT = process.env.PORT || 3100;
+
+const server = http.createServer((req,res)=>{
+    console.log(req.url,req.method);
+})
+
+server.listen(PORT, ()=>console.log(`server running on port ${PORT}`));
