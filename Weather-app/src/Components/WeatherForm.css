@@ -1,8 +1,12 @@
+/* text styling */
 pre{
     font-size: x-large;
     margin-top: 0px;
     }
-    
+
+/* *************************** */
+
+/* form styling */
     form{
       padding-left: 3%;
     }
@@ -11,6 +15,7 @@ pre{
       color: grey;
       font-size: small;
     }
+    /* entering the button inside the input part 1*/
     #inputConteiner {
       display: flex;
       flex-direction: row;
@@ -18,7 +23,7 @@ pre{
       align-items: center;
       width: min-content;
     }
-    
+    /* entering the button inside the input part 2 */
     #cityNameInput {
       position: relative;
       width: 280px;
@@ -29,7 +34,7 @@ pre{
       padding: 10px 15px;
     }
     
-    #submit {
+    .submit {
       position: absolute;
       margin-right: 10px;
       border: none;
@@ -39,4 +44,9 @@ pre{
       padding-left: 10px;
       padding-right: 10px;
     }
-    
+
+    /* adding hover for button (need degisn adjusment) */
+    #able-button:hover{
+      background:#006a39;
+      color:#00034d;
+    }
