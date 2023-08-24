@@ -4,11 +4,11 @@ import WeatherPopup from './Components/WeatherPopup'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cityName, setCityName] = useState("")
 
   return (
     <div id='app-conteiner'>
-      <WeatherForm />
+      <WeatherForm cityName={cityName} setCityName={setCityName}/>
       <WeatherPopup />
     </div>
   )
