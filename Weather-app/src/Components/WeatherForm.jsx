@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './WeatherPopup.css'
+import axios from 'axios';
 
 // opening message text
 const text = `
@@ -7,18 +8,31 @@ const text = `
     to see the weather
     around the world
   `
+
 function WeatherForm({setWeatherData}) {
-    const [cityName,setCityName] = useState("")
+    const [cityName,setCityName] = useState("");
+
+  const getWeatherData = async () => {
+    try {
+      const response = await axios.post('http://localhost:3100/getWeather', { city });
+      console.log(response)
+    } catch (err) {
+      console.error('There was a problem with the request:', err);
+    }
+  };
   // form handling
   const handleChange = (eve) =>{
     setCityName(eve.target.value)
   }
 
+
   const handleSubmit = (eve) => {
     eve.preventDefault()
     //send API request and  w8 for response, then show to weather
-    console.log(cityName);
-    setWeatherData("abc")
+    getWeatherData(cityName)
+      .then(response => {console.log(response);})
+      .catch(err =>{console.log(err);})
+    
   }
 
 
