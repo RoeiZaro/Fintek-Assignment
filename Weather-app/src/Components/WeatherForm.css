@@ -1,0 +1,42 @@
+pre{
+    font-size: x-large;
+    margin-top: 0px;
+    }
+    
+    form{
+      padding-left: 3%;
+    }
+    
+    label {
+      color: grey;
+      font-size: small;
+    }
+    #inputConteiner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: min-content;
+    }
+    
+    #cityNameInput {
+      position: relative;
+      width: 280px;
+      height: 30px;
+      color: grey;
+      border: none;
+      border-radius: 0.3rem;
+      padding: 10px 15px;
+    }
+    
+    #submit {
+      position: absolute;
+      margin-right: 10px;
+      border: none;
+      background:#0b683c;
+      color:#deffef;
+      border-radius: 0.45rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    

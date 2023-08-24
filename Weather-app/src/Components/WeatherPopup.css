@@ -1,0 +1,50 @@
+#popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    background-color: #26737d;
+    border-radius: 1rem;
+    color: #f0efed
+  }
+  
+  p{
+    margin: 0px;
+  }
+  
+  #location-section :first-child{
+   font-size: large;
+   font-weight: 300;
+  }
+  #location-section :nth-child(2){
+    font-size: smaller;
+    font-weight: lighter;
+    color: rgba(218, 217, 217, 0.789);
+   }
+  
+  #temperature-section{
+    font-size: 4.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  #bottom-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  #bottom-info p:first-child{
+    font-size: smaller;
+    font-weight: 100;
+    color: rgba(218, 217, 217, 0.789); 
+  }
+  
+  #bottom-info p:nth-child(2){
+    font-size: large;
+    font-weight: 900;
+      
+  }
