@@ -3,11 +3,7 @@ import './WeatherPopup.css'
 import axios from 'axios';
 
 // opening message text
-const text = `
-    Use our weather app
-    to see the weather
-    around the world
-  `
+const text = 'Use our weather app\nto see the weather\naround the world'
 
 function WeatherForm({setWeatherData}) {
   const [cityName,setCityName] = useState("");
