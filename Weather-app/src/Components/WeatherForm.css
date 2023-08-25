@@ -1,12 +1,13 @@
 /* text styling */
 pre{
-    font-size: xx-large;
+    font-size: 28px;
     margin-top: 0px;
+    color: gray;
     }
 
 /* form styling */
-    form{
-      padding-left: 3%;
+    #form-conteiner > *{
+      padding-left: 8%;
     }
     
     label {
@@ -52,6 +53,11 @@ pre{
       background: #2c974b;
       color:#000000;
     }
+
+    #able-button:focus{
+      background: #2c974b;
+      color:#000000;
+  }
 
 
   #able-button:active {
