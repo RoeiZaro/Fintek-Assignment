@@ -7,18 +7,20 @@ const text = 'Use our weather app\nto see the weather\naround the world'
 
 function WeatherForm({setWeatherData}) {
   const [cityName,setCityName] = useState("");
-  let existCityData = "";
+  const [existCityData,setExistCityData] = useState("");
 
   const getWeatherData = async () => {
+    console.log(cityName);
+    console.log(existCityData);
     try {
       const response = await axios.post('http://localhost:3100/getWeather', { city: cityName });
+      setExistCityData(prev=>cityName);
       setWeatherData(prev=>response.data.weatherDataForClient);
-      existCityData = cityName;
     } catch (err) {
       alert(err.message);
       if(err.message === "Request failed with status code 400"){
         setWeatherData(prev=>{});
-        existCityData = "";
+        setExistCityData(prev=>"");
       }
       console.error('There was a problem with the request:', err);
     }
