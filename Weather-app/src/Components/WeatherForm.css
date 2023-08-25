@@ -1,3 +1,4 @@
+/* padding for all element inside the left half screen */
 #form-conteiner > * {
   padding-left: 8%;
 }
@@ -33,10 +34,12 @@ label {
   padding: 10px 15px;
 }
 
+/* remove focus outline for input */
 #cityNameInput:focus {
   outline: none;
 }
 
+/* button styling */
 .submit {
   position: absolute;
   margin-right: 10px;
@@ -54,15 +57,18 @@ label {
   color: #000000;
 }
 
+/* adding interactive look to bottun on hover when there is data in input */
 #able-button:focus {
   background: #2c974b;
   color: #000000;
 }
 
+/* adding interactive look to bottun on click and space pressing when there is data in input */
 #able-button:active {
   color: #deffef;
 }
 
+/* resposive look to small screens */
 @media screen and (max-width: 680px) {
   #form-conteiner > * {
     padding-left: 0px;

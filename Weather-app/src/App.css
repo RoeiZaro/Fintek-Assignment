@@ -1,3 +1,4 @@
+/* dividing the screen to 2 parts and adjust looks abit */
 #app-conteiner {
   display: flex;
   height: 100%;
@@ -19,6 +20,7 @@
   justify-content: space-around;
 }
 
+/* small screen view */
 @media screen and (max-width: 680px) {
   #app-conteiner {
     display: flex;

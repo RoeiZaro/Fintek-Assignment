@@ -1,3 +1,4 @@
+/* popup styling */
 #popup {
   display: flex;
   flex-direction: column;
@@ -10,20 +11,24 @@
   color: #f0efed;
 }
 
+/* changing base look of each <p> element */
 p {
   margin: 0px;
 }
-
+/* custom styling for each child */
 #location-section :first-child {
   font-size: large;
   font-weight: 300;
 }
+
+/* custom styling for each child */
 #location-section :nth-child(2) {
   font-size: smaller;
   font-weight: lighter;
   color: rgba(218, 217, 217, 0.789);
 }
 
+/* making the temp BIG */
 #temperature-section {
   font-size: 4.5rem;
   font-weight: 600;
@@ -31,6 +36,7 @@ p {
   padding-bottom: 3rem;
 }
 
+/* offsetting the temp abit so the number in the middle and the degree symbol right leaning */
 #temperature-section > p {
   text-align: center;
   margin: 0;
@@ -38,23 +44,27 @@ p {
   left: 10px;
 }
 
+/* styling the bottom to be horizontal*/
 #bottom-info {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+/* styling the bottom info head*/
 #bottom-info p:first-child {
   font-size: smaller;
   font-weight: 100;
   color: rgba(218, 217, 217, 0.789);
 }
 
+/* styling the bottom info data*/
 #bottom-info p:nth-child(2) {
   font-size: large;
   font-weight: 900;
 }
 
+/* reponsive degisn for small screen */
 @media screen and (max-width: 680px) {
   #popup {
     margin-bottom: 20px;
