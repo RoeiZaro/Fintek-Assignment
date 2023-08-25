@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div id='app-conteiner'>
-      <WeatherForm  setWeatherData={setWeatherData}/>
+      <WeatherForm setWeatherData={setWeatherData}/>
       <WeatherPopup  weatherData={weatherData}/>
     </div>
   )
