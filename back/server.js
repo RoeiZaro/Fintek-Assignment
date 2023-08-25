@@ -1,7 +1,9 @@
-const PORT = process.env.PORT || 3100;
+require("dotenv").config();
 
-const express = require('express')
-const app = express()
+const PORT = process.env.PORT;
+// importing stuff
+const express = require("express");
+const app = express();
 const http = require("http").Server(app);
 const cors = require("cors");
 const weather = require("./route");
@@ -12,26 +14,15 @@ app.use(express.json());
 app.use(cors());
 
 //setting the route for the request
-app.use('/', weather)
+app.use("/", weather);
 
 //openning port
 http.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
-  });
-  
+  console.log(`Server listening on ${PORT}`);
+});
 
-
-
-
-
-
-
-
-
-
-
-
-// vanilla way
+//***************************************************************************************************************************************** */
+// vanilla way (delete later)
 // const http = require("http")
 
 // const PORT = process.env.PORT || 3100;

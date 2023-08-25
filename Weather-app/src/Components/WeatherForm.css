@@ -1,59 +1,80 @@
+/* padding for all element inside the left half screen */
+#form-conteiner > * {
+  padding-left: 8%;
+}
 /* text styling */
-pre{
-    font-size: xx-large;
-    margin-top: 0px;
-    }
+pre {
+  font-size: 28px;
+  margin-top: 0px;
+  color: gray;
+}
 
 /* form styling */
-    form{
-      padding-left: 3%;
-    }
-    
-    label {
-      color: grey;
-      font-size: small;
-    }
-    /* entering the button inside the input part 1*/
-    #inputConteiner {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      width: min-content;
-    }
-    /* entering the button inside the input part 2 */
-    #cityNameInput {
-      position: relative;
-      width: 280px;
-      height: 30px;
-      color: grey;
-      border: none;
-      border-radius: 0.3rem;
-      padding: 10px 15px;
-    }
 
-    #cityNameInput:focus{
-      outline: none;
+label {
+  color: grey;
+  font-size: small;
+}
+/* entering the button inside the input part 1*/
+#inputConteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: min-content;
+}
+/* entering the button inside the input part 2 */
+#cityNameInput {
+  position: relative;
+  width: 280px;
+  height: 30px;
+  color: grey;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 10px 15px;
+}
+
+/* remove focus outline for input */
+#cityNameInput:focus {
+  outline: none;
+}
+
+/* button styling */
+.submit {
+  position: absolute;
+  margin-right: 10px;
+  border: none;
+  background: #0b683c;
+  color: #deffef;
+  border-radius: 0.45rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* adding hover for button (need degisn adjusment) */
+#able-button:hover {
+  background: #2c974b;
+  color: #000000;
+}
+
+/* adding interactive look to bottun on hover when there is data in input */
+#able-button:focus {
+  background: #2c974b;
+  color: #000000;
+}
+
+/* adding interactive look to bottun on click and space pressing when there is data in input */
+#able-button:active {
+  color: #deffef;
+}
+
+/* resposive look to small screens */
+@media screen and (max-width: 680px) {
+  #form-conteiner > * {
+    padding-left: 0px;
+    margin: auto;
   }
-    
-    .submit {
-      position: absolute;
-      margin-right: 10px;
-      border: none;
-      background:#0b683c;
-      color:#deffef;
-      border-radius: 0.45rem;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    /* adding hover for button (need degisn adjusment) */
-    #able-button:hover{
-      background: #2c974b;
-      color:#000000;
-    }
-
-
-  #able-button:active {
-    color: #deffef
+  pre {
+    text-align: center;
+  }
 }
