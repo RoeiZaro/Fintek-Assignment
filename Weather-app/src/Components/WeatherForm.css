@@ -1,10 +1,8 @@
 /* text styling */
 pre{
-    font-size: x-large;
+    font-size: xx-large;
     margin-top: 0px;
     }
-
-/* *************************** */
 
 /* form styling */
     form{
@@ -33,6 +31,10 @@ pre{
       border-radius: 0.3rem;
       padding: 10px 15px;
     }
+
+    #cityNameInput:focus{
+      outline: none;
+  }
     
     .submit {
       position: absolute;
@@ -47,6 +49,11 @@ pre{
 
     /* adding hover for button (need degisn adjusment) */
     #able-button:hover{
-      background:#006a39;
-      color:#00034d;
+      background: #2c974b;
+      color:#000000;
     }
+
+
+  #able-button:active {
+    color: #deffef
+}
