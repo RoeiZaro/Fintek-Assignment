@@ -1,64 +1,74 @@
+#form-conteiner > * {
+  padding-left: 8%;
+}
 /* text styling */
-pre{
-    font-size: 28px;
-    margin-top: 0px;
-    color: gray;
-    }
+pre {
+  font-size: 28px;
+  margin-top: 0px;
+  color: gray;
+}
 
 /* form styling */
-    #form-conteiner > *{
-      padding-left: 8%;
-    }
-    
-    label {
-      color: grey;
-      font-size: small;
-    }
-    /* entering the button inside the input part 1*/
-    #inputConteiner {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      width: min-content;
-    }
-    /* entering the button inside the input part 2 */
-    #cityNameInput {
-      position: relative;
-      width: 280px;
-      height: 30px;
-      color: grey;
-      border: none;
-      border-radius: 0.3rem;
-      padding: 10px 15px;
-    }
 
-    #cityNameInput:focus{
-      outline: none;
+label {
+  color: grey;
+  font-size: small;
+}
+/* entering the button inside the input part 1*/
+#inputConteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: min-content;
+}
+/* entering the button inside the input part 2 */
+#cityNameInput {
+  position: relative;
+  width: 280px;
+  height: 30px;
+  color: grey;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 10px 15px;
+}
+
+#cityNameInput:focus {
+  outline: none;
+}
+
+.submit {
+  position: absolute;
+  margin-right: 10px;
+  border: none;
+  background: #0b683c;
+  color: #deffef;
+  border-radius: 0.45rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* adding hover for button (need degisn adjusment) */
+#able-button:hover {
+  background: #2c974b;
+  color: #000000;
+}
+
+#able-button:focus {
+  background: #2c974b;
+  color: #000000;
+}
+
+#able-button:active {
+  color: #deffef;
+}
+
+@media screen and (max-width: 680px) {
+  #form-conteiner > * {
+    padding-left: 0px;
+    margin: auto;
   }
-    
-    .submit {
-      position: absolute;
-      margin-right: 10px;
-      border: none;
-      background:#0b683c;
-      color:#deffef;
-      border-radius: 0.45rem;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    /* adding hover for button (need degisn adjusment) */
-    #able-button:hover{
-      background: #2c974b;
-      color:#000000;
-    }
-
-    #able-button:focus{
-      background: #2c974b;
-      color:#000000;
+  pre {
+    text-align: center;
   }
-
-  #able-button:active {
-    color: #deffef
 }
