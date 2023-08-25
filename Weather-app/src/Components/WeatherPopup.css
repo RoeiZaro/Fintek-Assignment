@@ -30,6 +30,13 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
+
+  #temperature-section>p {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    left: 10px; 
+  }
   
   #bottom-info{
     display: flex;
